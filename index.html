@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap" rel="stylesheet">
+    <title>Dylan Bourcier - Portfolio - Web Developer</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <span class="nav-indicator"></span>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="leftSide">
+            <h1><span class="blue">Dylan Bourcier</span>,</h1>
+            <p>Web developer in training, passionate about building functional and user-friendly websites. I enjoy solving problems, learning new technologies, and turning ideas into working projects.</p>
+            <div class="buttons">
+                <div class="see-more-container">
+                <a class="cta" href="#projects">See more</a>
+                <img src="./assets/icons/arrow.svg" alt="arrow" class="arrow">
+                </div>
+                <a class="cta" href="./assets/CV_Dylan_Bourcier.pdf" target="_blank">Download resume <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 15.575C11.8667 15.575 11.7417 15.5543 11.625 15.513C11.5083 15.4717 11.4 15.4007 11.3 15.3L7.7 11.7C7.5 11.5 7.404 11.2667 7.412 11C7.42 10.7333 7.516 10.5 7.7 10.3C7.9 10.1 8.13767 9.996 8.413 9.988C8.68833 9.98 8.92567 10.0757 9.125 10.275L11 12.15V5C11 4.71667 11.096 4.47934 11.288 4.288C11.48 4.09667 11.7173 4.00067 12 4C12.2827 3.99934 12.5203 4.09534 12.713 4.288C12.9057 4.48067 13.0013 4.718 13 5V12.15L14.875 10.275C15.075 10.075 15.3127 9.979 15.588 9.987C15.8633 9.995 16.1007 10.0993 16.3 10.3C16.4833 10.5 16.5793 10.7333 16.588 11C16.5967 11.2667 16.5007 11.5 16.3 11.7L12.7 15.3C12.6 15.4 12.4917 15.471 12.375 15.513C12.2583 15.555 12.1333 15.5757 12 15.575ZM6 20C5.45 20 4.97933 19.8043 4.588 19.413C4.19667 19.0217 4.00067 18.5507 4 18V16C4 15.7167 4.096 15.4793 4.288 15.288C4.48 15.0967 4.71733 15.0007 5 15C5.28267 14.9993 5.52033 15.0953 5.713 15.288C5.90567 15.4807 6.00133 15.718 6 16V18H18V16C18 15.7167 18.096 15.4793 18.288 15.288C18.48 15.0967 18.7173 15.0007 19 15C19.2827 14.9993 19.5203 15.0953 19.713 15.288C19.9057 15.4807 20.0013 15.718 20 16V18C20 18.55 19.8043 19.021 19.413 19.413C19.0217 19.805 18.5507 20.0007 18 20H6Z"/>
+                    </svg>
+                    </a>
+            </div>
+        </div>
+        <div class="rightSide">
+            <img src="./assets/img/profile-picture.png" alt="Photo" class="Photo">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projectsContainer">
+            <div class="projectCard">
+                <div class="projectImgContainer" data-url="https://github.com/Dahreau/forum-go">
+                    <img src="./assets/img/projectsImages/project1.png" alt="Screenshot Aniverse" class="projectImg">
+                </div>
+                <div class="projectInfo">
+                    <h3>Aniverse</h3>
+                    <p>Go and SQLite-based web app for posting, commenting, and filtering content with authentication and session management.</p>
+                    <p class="linkGithub">Github repository <img src="assets/icons/link-out.svg"></p>
+                </div>
+            </div>
+            <div class="projectCard" data-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <div class="projectImgContainer">
+                    <img src="./assets/img/projectsImages/project2.png" alt="Screenshot Star Wars: Invasion" class="projectImg">
+                </div>
+                <div class="projectInfo">
+                    <h3>Star Wars : Invasion</h3>
+                    <p>Video game developed in JavaScript vanilla. Space invaders like on the theme of Star Wars</p>
+                    <p class="linkGithub">Github repository <img src="assets/icons/link-out.svg"></p>
+                </div>
+            </div>
+            <div class="projectCard" data-url="https://zone01normandie.org/git/dbourcie/groupie-tracker">
+                <div class="projectImgContainer">
+                    <img src="./assets/img/projectsImages/project3.png" alt="Screenshot Groupie Tracker" class="projectImg">
+                </div>
+                <div class="projectInfo">
+                    <h3>Groupie Tracker</h3>
+                    <p>Go-powered web app that displays music artists, their history, and concert data through interactive visualizations.</p>
+                    <p class="linkGithub">Github repository <img src="assets/icons/link-out.svg"></p>
+                </div>
+            </div>
+            <div class="projectCard">
+                <div class="projectImgContainer">
+                    <img src="./assets/img/projectsImages/project4.png" alt="Screenshot Portfolio" class="projectImg">
+                </div>
+                <div class="projectInfo">
+                    <h3>Portfolio</h3>
+                    <p>The website you are currently visiting, Developed in HTML/CSS and JavaScript vanilla</p>
+                    <p class="linkGithub">Github repository <img src="assets/icons/link-out.svg"></p>
+                </div>
+            </div>
+                <a href="github.com/dylanBourcier" class="cta" target="_blank">See more <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_291_249)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C20.565 21.795 24 17.295 24 12C24 5.37 18.63 0 12 0Z"/>
+                    </g>
+                    </svg>
+                </a>
+        </div>
+    </section>
+
+</body>
+<script src="index.js"></script>
+</html>

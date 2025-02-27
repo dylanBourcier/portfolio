@@ -2,6 +2,8 @@
     --white: #EBEBEB;
     --white-3percent: rgba(255, 255, 255, 0.03);
     --white-50percent: rgba(255, 255, 255, 0.5);
+    --white-40percent: rgba(255, 255, 255, 0.4);
+    --white-30percent: rgba(255, 255, 255, 0.3);
     --blue: #2D82B7;
     --grey: #1C2328;
 }
@@ -21,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     color: var(--white);
 }
 
@@ -46,6 +48,7 @@ ul {
     justify-content: center;
     gap: 2rem;
     list-style: none;
+    padding: 0;
 }
 
 a {
@@ -260,20 +263,21 @@ nav {
     .projectsContainer {
         display: flex;
         justify-content: center;
-        gap: 2rem;
+        gap: 32px;
         flex-wrap: wrap;
     }
 
     .projectCard {
         display: flex;
         flex-direction: column;
-        width: 48%;
-
-
-        min-width: 300px;
+        min-width: 40%;
+        width: 47%;
         background-color: var(--white-3percent);
         border-radius: 10px;
-        border: 1px solid var(--white-50percent);
+        border-top: 1px solid var(--white-40percent);
+        border-left: 1px solid var(--white-30percent);
+        box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.075);
+        background-clip: padding-box;
         overflow: hidden;
         transition: all 0.3s;
         cursor: pointer;
@@ -290,6 +294,7 @@ nav {
                 height: 100%;
                 object-fit: cover;
                 transition: all 0.3s;
+                margin: 0;
             }
         }
 
@@ -299,7 +304,7 @@ nav {
             flex-direction: column;
             gap: 0.5rem;
 
-            h3 {
+            h4 {
                 font-size: 1.25rem;
             }
 
@@ -307,25 +312,33 @@ nav {
                 font-size: 0.875rem;
             }
 
-            h3,
+            h4,
             p {
                 margin: 0;
             }
         }
 
         .linkGithub {
-            opacity: 0;
+            opacity: 1;
             display: flex;
-            color: var(--grey);
+            align-items: center;
+            color: var(--white);
             font-weight: 600;
-            transition: all 0.3s;
             gap: 0.5rem;
+            transition: all 0.3s;
+
+            svg path {
+                stroke: var(--white);
+                transition: all 0.3s;
+            }
         }
     }
 
     .projectCard:hover {
         background-color: var(--white);
         color: var(--grey);
+        border-top: 1px solid var(--white-50percent);
+        border-left: 1px solid var(--white-40percent);
 
         .projectImgContainer {
             img {
@@ -334,11 +347,80 @@ nav {
         }
 
         .linkGithub {
-            opacity: 1;
+            color: var(--grey);
+            text-decoration: underline;
+
+            svg path {
+                stroke: var(--grey);
+            }
         }
+    }
+
+    .projectCard:active {
+        transform: scale(0.98);
+        transition: all 0.1s;
+    }
+
+    #seeMoreBtn {
+        min-width: 10%;
+        width: 48%;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
     }
 }
 
+#skills {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .skillsCategory {
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+
+    .skillsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: flex-start;
+        width: fit-content;
+
+        .skillCard {
+            display: flex;
+            flex-direction: column;
+            min-width: 90px;
+            align-items: center;
+            box-sizing: border-box;
+            gap: 0.625rem;
+            padding: 0.625rem;
+            background-color: var(--white-3percent);
+            border-radius: 10px;
+            border-top: 1px solid var(--white-40percent);
+            border-left: 1px solid var(--white-30percent);
+            box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.17);
+            transition: transform 0.3s ease;
+
+            p {
+                margin: 0;
+            }
+
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        .skillCard:hover {
+            transform: rotate(-1deg) scale(1.03);
+        }
+    }
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -371,10 +453,19 @@ nav {
         .buttons {
             gap: 1rem;
         }
+
+        .arrow {
+            display: none;
+        }
     }
 
-    .arrow {
-        display: none;
-    }
+    #projects {
+        .projectsContainer {
+            gap: 1rem;
+        }
 
+        .projectCard {
+            width: 100%;
+        }
+    }
 }

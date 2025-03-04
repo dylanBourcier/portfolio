@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" width="300" height="150">
+  <!-- Symbole : Clé de code </> -->
+  <text x="20" y="50" font-family="Mina" font-size="40" fill="#2D82B7">&lt;/&gt;</text>
+
+  <!-- Texte : Nom -->
+  <text x="100" y="50" font-family="Mina'" font-size="24" fill="#1C2328">Dylan Bourcier</text>
+  <!-- Texte : Titre -->
+  <text x="100" y="70" font-family="Mina'" font-size="16" fill="#1C2328">Développeur web</text>
+</svg>

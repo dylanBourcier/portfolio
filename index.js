@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section"); // All sections
     const navLinks = document.querySelectorAll(".nav-link"); // All nav links
     const indicator = document.querySelector(".nav-indicator"); // The moving dot
 
@@ -34,9 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     // Initialize the indicator position on load
     let activeLink = document.querySelector(".nav-link.active");
+    console.log(activeLink);
+    
     if (activeLink) {
         let { left, width } = activeLink.getBoundingClientRect();
-        let navbarLeft = document.querySelector(".navbar").getBoundingClientRect().left;
+        let navbarLeft = document.querySelector("nav ul").getBoundingClientRect().left;
         indicator.style.transform = `translateX(${left - navbarLeft + width / 2 - 3}px)`;
     }
 });

@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: url("/assets/img/bg.png");
+    background: url("/assets/img/bg.webp");
     background-size: cover;
     background-position: top;
     font-family: "Mina", sans-serif;
